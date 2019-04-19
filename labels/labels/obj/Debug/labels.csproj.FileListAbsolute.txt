@@ -8,3 +8,4 @@ C:\Users\lauha\source\repos\labels\labels\obj\Debug\labels.csproj.GenerateResour
 C:\Users\lauha\source\repos\labels\labels\obj\Debug\labels.csproj.CoreCompileInputs.cache
 C:\Users\lauha\source\repos\labels\labels\obj\Debug\labels.exe
 C:\Users\lauha\source\repos\labels\labels\obj\Debug\labels.pdb
+C:\Users\lauha\source\repos\labels\labels\obj\Debug\labels.modal.resources

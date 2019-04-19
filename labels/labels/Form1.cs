@@ -12,25 +12,39 @@ namespace labels
 {
     public partial class Form1 : Form
     {
+        Modal modal;
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            resize();
         }
 
-        private void txtInput_TextChanged(object sender, EventArgs e)
+        private void Modal_GetInput(string txt)
         {
-            lbl_dynamic.Text = txtInput.Text;
+            if(!string.IsNullOrEmpty(txt))
+                lbl_dynamic.Text = txt; 
         }
 
-        private void flowLayoutPanel2_Resize(object sender, EventArgs e)
+        private void btnOpenModalView_Click(object sender, EventArgs e)
         {
-            var w = flowLayoutPanel2.Width;
-            txtInput.Width = (w - 5);
+            modal = new Modal(lbl_dynamic.Text);
+            modal.Show();
+            modal.GetInput += Modal_GetInput;
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            resize();
+        }
+
+        private void resize()
+        {
+            tableLayoutPanel1.Height = this.Height;
         }
     }
 }
