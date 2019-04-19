@@ -47,9 +47,9 @@ namespace labels
         private void init()
         {
             resize();
-            var txt = ":-)";
-            lbl_dynamic.Text = txt;
-            count(txt);
+            var lblDynamic = ":-)";
+            lbl_dynamic.Text = lblDynamic;
+            count(lblDynamic);
         }
 
         private void btnOpenModalView_Click(object sender, EventArgs e)
