@@ -20,11 +20,13 @@ namespace labels
         {
             InitializeComponent();
             txtInput.Text = txt;
+            count(txt);
         }
 
         private void txtInput_TextChanged(object sender, EventArgs e)
         {
             returnVal = txtInput.Text;
+            count(returnVal);
         }
 
         private void bnCancel_Click(object sender, EventArgs e)
@@ -42,6 +44,11 @@ namespace labels
         {
             returnVal = "";
             this.Close();
+        }
+
+        private void count(string txt)
+        {
+            lbl_length.Text = string.Format("Text hat {0} Zeichen", txt.Length.ToString());
         }
     }
 }
