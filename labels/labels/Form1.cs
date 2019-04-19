@@ -47,7 +47,7 @@ namespace labels
         private void init()
         {
             resize();
-            var lblDynamic = ":-)";
+            var lblDynamic = ":-P";
             lbl_dynamic.Text = lblDynamic;
             count(lblDynamic);
         }
