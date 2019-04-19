@@ -60,9 +60,8 @@
             this.lbl_dynamic.Location = new System.Drawing.Point(10, 10);
             this.lbl_dynamic.Margin = new System.Windows.Forms.Padding(10, 10, 3, 0);
             this.lbl_dynamic.Name = "lbl_dynamic";
-            this.lbl_dynamic.Size = new System.Drawing.Size(265, 24);
+            this.lbl_dynamic.Size = new System.Drawing.Size(148, 24);
             this.lbl_dynamic.TabIndex = 1;
-            this.lbl_dynamic.Text = "i bims a text mit variabler länge";
             // 
             // label3
             // 

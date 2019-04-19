@@ -16,6 +16,7 @@ namespace labels
         public Form1()
         {
             InitializeComponent();
+            lbl_dynamic.Text = ":-)";
 
         }
 
