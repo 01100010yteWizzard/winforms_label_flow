@@ -27,6 +27,10 @@ namespace labels
             lbl_dynamic.Text = txtInput.Text;
         }
 
-       
+        private void flowLayoutPanel2_Resize(object sender, EventArgs e)
+        {
+            var w = flowLayoutPanel2.Width;
+            txtInput.Width = (w - 5);
+        }
     }
 }
